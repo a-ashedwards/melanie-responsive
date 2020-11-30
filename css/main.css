@@ -84,8 +84,250 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+ Custom styles for HOME index page
    ========================================================================== */
+ 
+   /**  Classes utilized in multiple sections and pages  **/
+.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/** header and footer styling utilized on all pages of the site **/
+
+header,
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-divider {
+
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+
+}
+
+/** FOOTER styling used across all pages of the unplugged site **/
+
+.footer-content {
+  
+}
+
+.contact {
+  
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h4 {
+
+}
+
+address {
+
+}
+
+p {
+
+}
+
+.copywright {
+ 
+}
+
+h5 {
+
+}
+
+/**  Main content stylings for the home page **/
+#hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+
+}
+
+aside {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-description {
+  
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+.form {
+  
+}
+
+input {
+
+}
+/** beginning of the icons of features and their descriptions on home page **/
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+
+}
+
+.features-items article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fontawesome-icon {
+
+}
+
+.feature-item-description {
+
+}
+/**  END of the features section styling on home page **/
+
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+
+}
+ 
+.review-text {
+
+}
+
+/**  END STYLING FOR HOME PAGE   Main content stylings used on the ABOUT page only  **/
+
+.mission {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-content {
+ 
+}
+
+h1 {
+
+}
+
+.mission-statement {
+ 
+}
+
+p {
+
+}
+
+.map {
+
+}
+
+figure {
+
+}
+
+.contact-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+
+}
+
+h4 {
+
+}
+
+address {
+
+}
+
+/**  Main content stylings used for the FAQ page only  **/
+
+.faq-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-content {
+ 
+}
+
+h1 {
+
+}
+
+h4 {
+
+}
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
