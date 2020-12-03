@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -85,57 +85,111 @@ textarea {
 
 /* ==========================================================================
  Custom styles for HOME index page
+
+FONTS USED: font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
    ========================================================================== */
- 
-   /**  Classes utilized in multiple sections and pages  **/
-.content-wrapper {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+body {
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  color: #e2e3ed;
 }
 
-/** header and footer styling utilized on all pages of the site **/
-
-header,
-footer {
+.content-wrapper {
+  width: 90%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
+}
+  
+  
+  /** header and footer styling utilized on all pages of the site **/
+  
+header,
+footer {
+  background-color: #202322;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+ 
+header div.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+header img {
+  height: 40px;
+  padding: 15px 0;
 }
 
 .header-divider {
-
+  width: 100%;
+  height: 2px;
+  background-color: #3a3a3a;
 }
 
-nav {
+header nav {
+  width: 60%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
-nav ul {
+header nav ul {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 10px 0;
 }
 
-nav ul li {
+header nav ul li {
+  list-style: none;
+  display: block;
+  font-weight: 700;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+header nav ul li a {
+  text-decoration: none;
+  color: #e2e3ed;
 }
 
 /** FOOTER styling used across all pages of the unplugged site **/
 
-.footer-content {
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 30px 0;
   
 }
 
+footer p {
+  margin: 0;
+}
+
 .contact {
-  
+  text-align: center;
+}
+
+.contact a{
+  text-decoration: none;
+  color: #e2e3ed;
 }
 
 .social {
@@ -146,25 +200,26 @@ nav ul li {
 
 .social-icons {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
 }
 
-h4 {
-
+footer h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.125em;
 }
 
-address {
-
+footer address {
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
 }
 
-p {
-
-}
-
-.copywright {
- 
+footer h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+  font-weight: normal;
 }
 
 h5 {
@@ -174,81 +229,152 @@ h5 {
 /**  Main content stylings for the home page **/
 #hero-area {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 500px;
 }
 
-h1 {
-
+#hero-area h1 {
+  padding-top: 50px;
+  width: 83%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.250em;
+  line-height: 1.125em;
+  font-weight: 400;
+  padding-left: 5%;
 }
 
 aside {
+  background-color: #527158;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
+  height: 330px;
+  width: 100%;
+} 
+
+
+
+
+aside .form {
+  padding: 1px 0;
+  width: 100%;
 }
 
-.form-description {
-  
+.form h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.250em;
+  line-height: 1.125em;
+  font-weight: 400;
+  margin: 10px 0;
 }
 
-h4 {
-
+.form-description h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.250em;
+  line-height: 1.125em;
+  font-weight: 400;
+  margin: 0;
 }
 
-p {
-
+aside p {
+  font-size: 1em;
+  line-height: 1.125em;
+  margin-top: 10px;
 }
 
-.form {
-  
+aside .form-description {
+ width: 100%;
+ margin-top: 20px;
 }
 
 input {
-
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
 }
 /** beginning of the icons of features and their descriptions on home page **/
 
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h2 {
-
-}
-
-.features-items article {
+section.features {
+  height: 1450px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+
+.features h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 1.125em;
+  padding-top: 40px;
+  width: 85%;
+  align-self: start;
+}
+
+.features-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.features p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+  line-height: 1.125em;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+  
+
+
+.features article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 55%;
 }
 
 .fontawesome-icon {
-
+   width: 100%;
 }
 
 .feature-item-description {
-
+  width: 100%;
 }
 /**  END of the features section styling on home page **/
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  height: 610px;
+  margin: 0;
 }
 
-h2 {
+.reviews img {
+  width: 100%;
+}
 
+.reviews h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 1.188em;
+  margin: 0;
+  padding-bottom: 25px;
 }
  
-.review-text {
-
+.review-text p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+  line-height: 1.125em;
 }
 
 /**  END STYLING FOR HOME PAGE   Main content stylings used on the ABOUT page only  **/
@@ -258,14 +384,15 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  height: 440px;
 }
 
-.mission-content {
- 
-}
-
-h1 {
-
+.mission-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  line-height: 1.188em;
+  font-weight: 400;
 }
 
 .mission-statement {
@@ -277,6 +404,7 @@ p {
 }
 
 .map {
+  height: 450px;
 
 }
 
@@ -289,42 +417,80 @@ figure {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  height: 340px;
+  background-color: #2a423a ;
+
+}
+
+.contact-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  line-height: 1.188em;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 25px;
 }
 
 .contact-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 
 }
 
-h4 {
-
+.contact-content h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  line-height: 1em;
+  font-weight: 400;
+  margin: 16px 0;
 }
 
-address {
-
+.contact-content address {
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
 }
 
 /**  Main content stylings used for the FAQ page only  **/
 
-.faq-section {
+#faq-section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  height: 790px;
+  background-color: #527158;
 }
 
-.faq-content {
- 
+#faq-section .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; 
 }
 
-h1 {
-
+#faq-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  line-height: 1em;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
-h4 {
-
+.faq-content h4 {
+  font-size: 1.125em;
+  line-height: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
-
+.faq-content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+  line-height: 1.125em;
+}
 
 
 
