@@ -315,18 +315,19 @@ section.features {
   align-self: start;
 }
 
-.features-items {
+div.features-items {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.features p {
+.features-items p.feature-item-description {
   font-family: 'Open Sans', sans-serif;
   font-size: .875em;
   line-height: 1.125em;
   margin: 0;
   padding-bottom: 50px;
+  text-align: center;
 }
 
   
@@ -348,7 +349,7 @@ section.features {
 }
 /**  END of the features section styling on home page **/
 
-.reviews {
+section.reviews {
   background-color: #2a423a;
   display: flex;
   flex-flow: row wrap;
@@ -379,7 +380,7 @@ section.features {
 
 /**  END STYLING FOR HOME PAGE   Main content stylings used on the ABOUT page only  **/
 
-.mission {
+section.mission {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -388,16 +389,14 @@ section.features {
   height: 440px;
 }
 
-.mission-content h2 {
+section.mission .mission-content h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   line-height: 1.188em;
   font-weight: 400;
 }
 
-.mission-statement {
- 
-}
+
 
 p {
 
@@ -492,8 +491,17 @@ figure {
   line-height: 1.125em;
 }
 
+@media only screen and (min-width: 768px) {
+  /** TABLET STYLES GO HERE  **/
 
 
+}
+
+@media only screen and (min-width: 1200px) {
+  /**DESKTOP STYLES GO HERE  **/
+
+
+}
 
 /* ==========================================================================
    Helper classes
@@ -582,10 +590,176 @@ figure {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+ @media only screen and (min-width: 768px) {
+    /** TABLET STYLES GO HERE  **/
+  
+    header {
+      height: 100px;
+    }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+    .header-divider {
+      width: 0;
+      height: 0;
+    }
+
+    header div.content-wrapper {
+        justify-content: space-between;
+        width: 84%;
+    }
+
+    .content-wrapper {
+      justify-content: space-between;
+      width: 84%;
+    }
+
+    header nav {
+      width: 20%;
+      
+    }
+  
+    header nav ul {
+      justify-content: space-between;
+    }
+
+    footer {
+      height: 330px;
+    }
+
+    footer .footer-content {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
+    div.contact {
+      width: 34%;
+    }
+
+    div.social {
+      width: 34%
+    }
+
+    .copywright {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /**END of header and footer that will be on all pages- begin the home page CSS styling for Tablet size here **/
+
+    #hero-area {
+      height: 600px;
+    }
+
+    aside {
+      height: 240px;
+    }
+
+    aside .form {
+      width: 45%;
+    }
+
+    aside .form-description {
+      width: 40%;
+    }
+  
+    section.features {
+      height: 860px;
+    }
+
+    .features h2 {
+      width: 100%;
+    }
+
+    div.features-items {
+      justify-content: space-around;
+    }
+
+    .features article {
+      flex-basis: 40%;
+    }
+
+    .features p {
+      width: 65%;
+    }
+
+    section.reviews {
+      height: 500px;
+    }
+
+    .reviews h2 {
+      width: 80%;
+    }
+    .reviews img {
+      width: 49%;
+    }
+
+    div.review-text {
+      width: 49%;
+    }
+
+    .reviews article {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /** TABLET STYLES FOR ABOUT PAGE start here -header and footer already set **/
+
+    section.mission {
+      height: 450px;
+
+    }
+
+    section.mission .mission-statement {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    section.mission .mission-statement p{
+      width: 48%;
+    }
+
+    section.map {
+      height: 350px;
+    }
+
+    section.contact-section div.content-wrapper {
+      justify-content: space-between;
+    }
+    section.contact-section h2 {
+      width: 80%;
+    }
+
+    section.contact-section div.contact-content {
+      width: 44%;
+    }
+    
+    /**FAQ for tablet styling begins here- header and footer are the same as other pages **/
+
+    #faq-section div.content-wrapper{
+      justify-content: space-between;
+    }
+
+    div.faq-content {
+      flex-basis: 40%;
+    }
+
+    #faq-section h2 {
+      width: 100%;
+    }
+
+  }
+
+
+
+  @media only screen and (min-width: 1200px) {
+    /**DESKTOP STYLES GO HERE  **/
+  
+  
+  }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
