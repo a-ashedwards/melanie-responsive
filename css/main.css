@@ -761,8 +761,8 @@ section.contact-section div.content-wrapper {
       width: 48%;
     }
 
-    section.map {
-      height: 350px;
+    .map figure {
+      padding-bottom: 45%;
     }
 
     section.contact-section div.content-wrapper {
@@ -903,8 +903,9 @@ section.contact-section div.content-wrapper {
     div.mission-statement p {
       width: 47%;
     }
-    section.map {
-      height: 450px;
+    
+    .map figure {
+      padding-bottom: 35%;
     }
 
     section.contact-section {
