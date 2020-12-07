@@ -442,13 +442,20 @@ section.mission .mission-content h2 {
   line-height: 1.188em;  
 }
 
-.map {
-  height: 450px;
-
+.map figure {
+  position: relative;
+  padding-bottom: 125%;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
 }
 
-figure {
-
+.map iframe {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .contact-section {
