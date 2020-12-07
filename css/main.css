@@ -84,20 +84,78 @@ textarea {
 }
 
 /* ==========================================================================
- Custom styles for HOME index page
+ GENERAL Styles here
 
 FONTS USED: font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 
    ========================================================================== */
+html {
+  font-size: 16px;
+}
+
 body {
-  width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   line-height: 1em;
   color: #e2e3ed;
 }
 
+ul,
+ol {
+  list-style: none;
+  display: block;
+  font-weight: 700;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #e2e3ed;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  line-height: 1.125em;
+}
+
+h3 {
+
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.250em;
+  line-height: 1.125em;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  line-height: 1.125em;
+}
+
+img {
+
+}
+
+figure {
+
+}
+
+address,
+h5 {
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .875em;
+  font-weight: 400;
+}
 .content-wrapper {
   width: 90%;
   display: flex;
@@ -155,20 +213,6 @@ header nav ul {
   padding: 10px 0;
 }
 
-header nav ul li {
-  list-style: none;
-  display: block;
-  font-weight: 700;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #e2e3ed;
-}
 
 /** FOOTER styling used across all pages of the unplugged site **/
 
@@ -194,11 +238,6 @@ div.contact {
   width: 100%;
 }
 
-.contact a{
-  text-decoration: none;
-  color: #e2e3ed;
-}
-
 div.social {
   display: flex;
   justify-content: center;
@@ -213,29 +252,12 @@ div.social {
 }
 
 footer h4 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
   font-size: 1.125em;
 }
 
-footer address {
-  font-style: normal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: .875em;
-}
-
-footer h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: .875em;
-  font-weight: normal;
-}
-
 footer div.copywright {
-  display: flex;
-  flex-flow: row nowrap;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 /**  Main content stylings for the home page **/
@@ -267,33 +289,20 @@ aside {
   width: 100%;
 } 
 
-
-
-
 aside .form {
   padding: 1px 0;
   width: 100%;
 }
 
 .form h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.250em;
-  line-height: 1.125em;
-  font-weight: 400;
   margin: 10px 0;
 }
 
 .form-description h4 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.250em;
-  line-height: 1.125em;
-  font-weight: 400;
   margin: 0;
 }
 
 aside p {
-  font-size: 1em;
-  line-height: 1.125em;
   margin-top: 10px;
 }
 
@@ -327,10 +336,6 @@ section.features div.content-wrapper {
 }
 
 .features h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 1.875em;
-  line-height: 1.125em;
   padding-top: 40px;
   width: 85%;
   align-self: start;
@@ -387,18 +392,13 @@ section.reviews {
 }
 
 .reviews h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 1.875em;
   line-height: 1.188em;
   margin: 0;
   padding-bottom: 25px;
 }
  
 .review-text p{
-  font-family: 'Open Sans', sans-serif;
-  font-size: .875em;
-  line-height: 1.125em;
+  font-size: .875em; 
 }
 
 /**  END STYLING FOR HOME PAGE   Main content stylings used on the ABOUT page only  **/
@@ -413,16 +413,7 @@ section.mission {
 }
 
 section.mission .mission-content h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-  line-height: 1.188em;
-  font-weight: 400;
-}
-
-
-
-p {
-
+  line-height: 1.188em;  
 }
 
 .map {
@@ -450,10 +441,7 @@ section.contact-section div.content-wrapper {
 }
 
 .contact-section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-  line-height: 1.188em;
-  font-weight: 400;
+  line-height: 1.188em;  
   margin: 0;
  
 }
@@ -467,17 +455,9 @@ section.contact-section div.content-wrapper {
 }
 
 .contact-content h4 {
-  font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   line-height: 1em;
-  font-weight: 400;
   margin: 16px 0;
-}
-
-.contact-content address {
-  font-style: normal;
-  font-family: 'Open Sans', sans-serif;
-  font-size: .875em;
 }
 
 /**  Main content stylings used for the FAQ page only  **/
@@ -499,10 +479,7 @@ section.contact-section div.content-wrapper {
 }
 
 #faq-section h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
-  line-height: 1em;
-  font-weight: 400;
+  line-height: 1em; 
   margin: 0;
   padding-bottom: 20px;
 }
@@ -510,14 +487,10 @@ section.contact-section div.content-wrapper {
 .faq-content h4 {
   font-size: 1.125em;
   line-height: 1.5em;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
 }
 
 .faq-content p {
-  font-family: 'Open Sans', sans-serif;
   font-size: .875em;
-  line-height: 1.125em;
 }
 
 
