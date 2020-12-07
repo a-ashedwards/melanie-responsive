@@ -176,15 +176,22 @@ header nav ul li a {
 footer .content-wrapper {
   width: 55%;
   margin: 30px 0;
-  
 }
 
 footer p {
   margin: 0;
 }
 
-.contact {
+footer div.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+}
+div.contact {
   text-align: center;
+  width: 100%;
 }
 
 .contact a{
@@ -192,10 +199,11 @@ footer p {
   color: #e2e3ed;
 }
 
-.social {
+div.social {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .social-icons {
@@ -222,8 +230,12 @@ footer h5 {
   font-weight: normal;
 }
 
-h5 {
-
+footer div.copywright {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 /**  Main content stylings for the home page **/
@@ -305,6 +317,15 @@ section.features {
   width: 100%;
 }
 
+section.features div.content-wrapper {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+}
+
 .features h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -319,6 +340,8 @@ div.features-items {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: flex-start;
+  
 }
 
 .features-items p.feature-item-description {
@@ -418,7 +441,12 @@ figure {
   align-items: center;
   height: 340px;
   background-color: #2a423a ;
+}
 
+section.contact-section div.content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .contact-section h2 {
@@ -427,14 +455,15 @@ figure {
   line-height: 1.188em;
   font-weight: 400;
   margin: 0;
-  padding-top: 25px;
+ 
 }
 
 .contact-content {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
-
+  align-items: flex-start;
+  width: 75%;
 }
 
 .contact-content h4 {
@@ -466,7 +495,7 @@ figure {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center; 
+  align-items: flex-start; 
 }
 
 #faq-section h2 {
@@ -491,17 +520,6 @@ figure {
   line-height: 1.125em;
 }
 
-@media only screen and (min-width: 768px) {
-  /** TABLET STYLES GO HERE  **/
-
-
-}
-
-@media only screen and (min-width: 1200px) {
-  /**DESKTOP STYLES GO HERE  **/
-
-
-}
 
 /* ==========================================================================
    Helper classes
@@ -625,20 +643,22 @@ figure {
       height: 330px;
     }
 
-    footer .footer-content {
-      width: 100%;
+    footer div.footer-content {
+      width: 85%;
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: flex-start;
     }
 
     div.contact {
-      width: 34%;
+      width: 36%;
+      text-align: center;
     }
 
     div.social {
-      width: 34%
+      width: 36%;
+      text-align: center;
     }
 
     .copywright {
@@ -650,6 +670,10 @@ figure {
 
     #hero-area {
       height: 600px;
+    }
+
+    #hero-area h1 {
+      padding-left: 8%;
     }
 
     aside {
@@ -667,13 +691,15 @@ figure {
     section.features {
       height: 860px;
     }
-
+    
     .features h2 {
       width: 100%;
     }
 
     div.features-items {
-      justify-content: space-around;
+      width: 85%;
+      justify-content: space-between;
+      align-items: flex-start;
     }
 
     .features article {
@@ -681,7 +707,7 @@ figure {
     }
 
     .features p {
-      width: 65%;
+      text-align: center;
     }
 
     section.reviews {
@@ -695,6 +721,9 @@ figure {
       width: 49%;
     }
 
+    .reviews div.review-text h4 {
+      margin: 0;
+    }
     div.review-text {
       width: 49%;
     }
@@ -728,12 +757,20 @@ figure {
 
     section.contact-section div.content-wrapper {
       justify-content: space-between;
-    }
-    section.contact-section h2 {
-      width: 80%;
+      align-items: flex-start;
     }
 
+    section.contact-section h2 {
+      width: 80%;
+      font-size: 2.25em;
+      
+    }
+    
     section.contact-section div.contact-content {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
       width: 44%;
     }
     
@@ -758,8 +795,127 @@ figure {
   @media only screen and (min-width: 1200px) {
     /**DESKTOP STYLES GO HERE  **/
   
+    .content-wrapper {
+      width: 80%;
+    }
   
+    header {
+      height: 100px;
+    }
+
+    header div.content-wrapper {
+      width: 80%;
+    }
+
+    header nav {
+      width: 14%;
+    }
+    
+    footer {
+      height: 340px;
+    }
+
+    footer div.content-wrapper {
+      width: 100%;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    #hero-area {
+      height: 600px;
+    }
+    
+    #hero-area h1 {
+      padding: 10%;
+      padding-top: 40px;
+    }
+
+    aside {
+      height: 260px;
+    }
+
+    aside div.content-wrapper {
+      width: 70%;
+    }
+
+    aside div.form-description {
+      width: 40%;
+    }
+
+    aside div.form {
+      width: 40%;
+    }
+
+    section.features {
+      height: 800px;
+    }
+
+    section.features div.content-wrapper {
+      width: 80%;
+    }
+    
+    section.features div.features-items {
+      width: 85%;
+    }
+
+    .features article {
+      width: 25%;
+      flex-basis: 30%;
+    }
+
+    
+    section.features div.content-wrapper h2 {
+      width: 93%;
+    }
+    
+    section.reviews {
+      height: 630px;
+    }
+
+    .reviews div.content-wrapper {
+      align-items: center;
+    }
+    
+    .reviews div.review-text h4 {
+      margin: 0;
+    
+    }
+/**Desktop styles for ABOUT PAGE begin here**/
+
+    section.mission {
+      height: 440px;
+    }
+
+    div.mission-statement p {
+      width: 47%;
+    }
+    section.map {
+      height: 450px;
+    }
+
+    section.contact-section {
+      height: 400px;
+    }
+
+    section.contact-section h2 {
+      padding: 0;
+      font-size: 3em;
+      
+      width: 80%;
+    }
+
+    section.contact-section div.contact-content {
+      width: 47%;
+    }
+
+    div.contact-content h4 {
+      width: 100%;
+    }
+
+
+
   }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
