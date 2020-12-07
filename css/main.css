@@ -142,11 +142,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address,
@@ -186,8 +186,8 @@ header div.content-wrapper {
   margin: 0;
 }
 
-header img {
-  height: 40px;
+header figure {
+  width: 70%;
   padding: 15px 0;
 }
 
@@ -267,6 +267,9 @@ footer div.copywright {
   justify-content: flex-start;
   align-items: flex-start;
   height: 500px;
+  background: url('../img/hero.jpg') center no-repeat #333;
+  background-size: cover;
+  
 }
 
 #hero-area h1 {
@@ -345,6 +348,8 @@ section.features {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
+  background: url('../img/camp-background.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 section.features div.content-wrapper {
@@ -408,7 +413,7 @@ section.reviews {
   margin: 0;
 }
 
-.reviews img {
+.reviews figure {
   width: 100%;
 }
 
@@ -598,20 +603,15 @@ section.contact-section div.content-wrapper {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
+   Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   
    ========================================================================== */
  @media only screen and (min-width: 768px) {
     /** TABLET STYLES GO HERE  **/
   
     header {
       height: 100px;
-    }
-
-    .header-divider {
-      width: 0;
-      height: 0;
     }
 
     header div.content-wrapper {
@@ -624,11 +624,19 @@ section.contact-section div.content-wrapper {
       width: 84%;
     }
 
+    header figure {
+      width: 35%;
+    }
+
+    div.header-divider {
+      height: 0;
+      width: 0;
+    }
+
     header nav {
       width: 20%;
-      
     }
-  
+      
     header nav ul {
       justify-content: space-between;
     }
@@ -661,6 +669,7 @@ section.contact-section div.content-wrapper {
     }
   
     /**END of header and footer that will be on all pages- begin the home page CSS styling for Tablet size here **/
+
 
     #hero-area {
       height: 600px;
@@ -711,8 +720,8 @@ section.contact-section div.content-wrapper {
     .reviews h2 {
       width: 80%;
     }
-    .reviews img {
-      width: 49%;
+    .reviews figure {
+      width: 48%;
     }
 
     .reviews div.review-text h4 {
@@ -799,6 +808,10 @@ section.contact-section div.content-wrapper {
 
     header div.content-wrapper {
       width: 80%;
+    }
+
+    header figure {
+      width: 30%;
     }
 
     header nav {
