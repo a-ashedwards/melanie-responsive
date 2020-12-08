@@ -261,13 +261,15 @@ footer div.copywright {
 }
 
 /**  Main content stylings for the home page **/
-#hero-area {
+section#hero-area {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
   height: 500px;
-  background: url('../img/hero.jpg') center no-repeat #333;
+  background: url('../img/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   
 }
@@ -280,6 +282,7 @@ footer div.copywright {
   line-height: 1.125em;
   font-weight: 400;
   padding-left: 5%;
+  margin: 0;
 }
 
 aside {
@@ -293,7 +296,7 @@ aside {
 } 
 
 aside .form {
-  margin-top: 30px;
+  
 }
  
 input[type=text] {
@@ -332,11 +335,10 @@ aside p {
 
 aside .form-description {
  width: 100%;
- margin-top: 20px;
+ padding-bottom: 20px;
 }
 
 input {
-  margin-bottom: 20px;
   height: 50px;
   width: 100%;
 }
@@ -352,7 +354,7 @@ section.features {
   background-size: cover;
 }
 
-section.features div.content-wrapper {
+section.features .content-wrapper {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
@@ -363,8 +365,10 @@ section.features div.content-wrapper {
 
 .features h2 {
   padding-top: 40px;
-  width: 85%;
+  padding-bottom: 30px;
+  width: 95%;
   align-self: start;
+  margin: 0;
 }
 
 div.features-items {
@@ -372,26 +376,33 @@ div.features-items {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  
-}
+  }
+
+.features i {
+    font-size: 3.75em;
+    margin-bottom: 30px;
+  }  
 
 .features-items p.feature-item-description {
   font-family: 'Open Sans', sans-serif;
   font-size: .875em;
   line-height: 1.125em;
   margin: 0;
-  padding-bottom: 50px;
   text-align: center;
 }
 
-  
+.features article p.fontawesome-icon {
+  text-align: center;
+  margin: 0;
+}  
 
 
 .features article {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 55%;
+  width: 62%;
+  padding-bottom: 60px;
 }
 
 .fontawesome-icon {
@@ -420,8 +431,8 @@ section.reviews {
 .reviews h2 {
   line-height: 1.188em;
   margin: 0;
-  padding-bottom: 25px;
-}
+  padding-bottom: 15px;
+  }
  
 .review-text p{
   font-size: .875em; 
@@ -678,7 +689,7 @@ section.contact-section div.content-wrapper {
     /**END of header and footer that will be on all pages- begin the home page CSS styling for Tablet size here **/
 
 
-    #hero-area {
+    section#hero-area {
       height: 600px;
     }
 
@@ -702,6 +713,10 @@ section.contact-section div.content-wrapper {
       height: 860px;
     }
     
+    section.features .content-wrapper {
+      width: 84%;
+    }
+
     .features h2 {
       width: 100%;
     }
@@ -712,7 +727,7 @@ section.contact-section div.content-wrapper {
       align-items: flex-start;
     }
 
-    .features article {
+    section.features .features-items article {
       flex-basis: 40%;
     }
 
@@ -818,7 +833,7 @@ section.contact-section div.content-wrapper {
     }
 
     header figure {
-      width: 30%;
+      width: 28%;
     }
 
     header nav {
@@ -835,7 +850,7 @@ section.contact-section div.content-wrapper {
       align-items: flex-start;
     }
 
-    #hero-area {
+    section#hero-area {
       height: 600px;
     }
     
@@ -872,9 +887,9 @@ section.contact-section div.content-wrapper {
       width: 85%;
     }
 
-    .features article {
-      width: 25%;
+    section.features .features-items article{
       flex-basis: 30%;
+      padding-bottom: 140px;
     }
 
     
@@ -886,8 +901,12 @@ section.contact-section div.content-wrapper {
       height: 630px;
     }
 
+    .reviews h2 {
+      padding-bottom: 40px;
+    }
+
     .reviews div.content-wrapper {
-      align-items: center;
+      align-items: flex-start;
     }
     
     .reviews div.review-text h4 {
