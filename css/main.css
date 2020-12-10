@@ -130,7 +130,7 @@ h3 {
 
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.250em;
   line-height: 1.125em;
 }
@@ -231,28 +231,37 @@ footer div.footer-content {
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-start;
-  width: 80%;
+  
 }
 div.contact {
   text-align: center;
   width: 100%;
+  margin: 0;
+  padding-bottom: 20px;;
 }
 
 div.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   width: 100%;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.social-icons i {
+  color: #527158;
+  text-shadow: 2px 1px 0 #e2e3ed;
+  font-size: 2.5em;
 }
 
 footer h4 {
   font-size: 1.125em;
+  width: 100%;
+  margin: 0;
+  padding: 24px 0;
 }
 
 footer div.copywright {
@@ -358,7 +367,7 @@ section.features .content-wrapper {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
 }
@@ -433,6 +442,10 @@ section.reviews {
   margin: 0;
   padding-bottom: 15px;
   }
+
+  .review-text h4 {
+    font-weight: 500;
+  }
  
 .review-text p{
   font-size: .875em; 
@@ -487,7 +500,7 @@ section.contact-section div.content-wrapper {
 .contact-section h2 {
   line-height: 1.188em;  
   margin: 0;
- 
+  padding-bottom: 15px;
 }
 
 .contact-content {
@@ -515,7 +528,7 @@ section.contact-section div.content-wrapper {
   background-color: #527158;
 }
 
-#faq-section .content-wrapper {
+#faq-section div.content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -627,7 +640,35 @@ section.contact-section div.content-wrapper {
    ========================================================================== */
  @media only screen and (min-width: 768px) {
     /** TABLET STYLES GO HERE  **/
-  
+  /**   GLOBAL styles for TABLET  **/
+
+  ul,
+  ol {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+
+  p {
+    font-size: .875em;
+    line-height: 1.29em;
+  }
+
+  address,
+  h5 {
+    line-height: 1.7em;
+  }
+
+
+  /** HEADER and FOOTER for TABLET  **/
     header {
       height: 100px;
     }
@@ -639,6 +680,7 @@ section.contact-section div.content-wrapper {
 
     .content-wrapper {
       justify-content: space-between;
+      align-items: flex-start;
       width: 84%;
     }
 
@@ -660,11 +702,21 @@ section.contact-section div.content-wrapper {
     }
 
     footer {
-      height: 330px;
+      height: 430px;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      line-height: 2em;
+    }
+
+    footer div.content-wrapper {
+      justify-content: center;
+      width: 84%;
     }
 
     footer div.footer-content {
-      width: 85%;
+      width: 80%;
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
@@ -676,9 +728,17 @@ section.contact-section div.content-wrapper {
       text-align: center;
     }
 
+    div.contact address {
+      text-align: center;
+    }
+    
     div.social {
       width: 36%;
       text-align: center;
+    }
+
+    .social-icons i {
+      font-size: 2.625em;
     }
 
     .copywright {
@@ -695,6 +755,8 @@ section.contact-section div.content-wrapper {
 
     #hero-area h1 {
       padding-left: 8%;
+      font-size: 3em;
+      line-height: 1em;
     }
 
     aside {
@@ -705,10 +767,17 @@ section.contact-section div.content-wrapper {
       width: 45%;
     }
 
+    aside .form h4 {
+      margin: 0;
+      padding-bottom: 10px;
+    }
+
     aside .form-description {
       width: 40%;
     }
   
+/**  FEATURES grid section for Tablet  **/
+
     section.features {
       height: 860px;
     }
@@ -731,15 +800,20 @@ section.contact-section div.content-wrapper {
       flex-basis: 40%;
     }
 
-    .features p {
+    section.features article p {
+      font-size: .875em;
+      line-height: 1.35em;
       text-align: center;
     }
+
+/**  REVIEWS section for TABLET styles  **/
 
     section.reviews {
       height: 500px;
     }
 
     .reviews h2 {
+      line-height: 1em;
       width: 80%;
     }
     .reviews figure {
@@ -762,7 +836,13 @@ section.contact-section div.content-wrapper {
 
     section.mission {
       height: 450px;
+    }
 
+    section.mission .mission-content h2 {
+      font-size: 2.3em;
+      line-height: 1.25em;
+      font-weight: lighter;
+      margin-top: 0;
     }
 
     section.mission .mission-statement {
@@ -774,10 +854,15 @@ section.contact-section div.content-wrapper {
 
     section.mission .mission-statement p{
       width: 48%;
+      margin: 0;
     }
 
     .map figure {
       padding-bottom: 45%;
+    }
+
+    section.contact-section {
+      height: 420px;
     }
 
     section.contact-section div.content-wrapper {
@@ -788,7 +873,7 @@ section.contact-section div.content-wrapper {
     section.contact-section h2 {
       width: 80%;
       font-size: 2.25em;
-      
+      padding-bottom: 25px;
     }
     
     section.contact-section div.contact-content {
@@ -798,28 +883,74 @@ section.contact-section div.content-wrapper {
       align-items: flex-start;
       width: 44%;
     }
+
+    section.contact-section div.contact-content h4 {
+      font-size: 1.5em;
+      line-height: 2em;
+    }
     
     /**FAQ for tablet styling begins here- header and footer are the same as other pages **/
 
-    #faq-section div.content-wrapper{
-      justify-content: space-between;
+    #faq-section {
+      height: 520px;
     }
 
-    div.faq-content {
-      flex-basis: 40%;
+    #faq-section div.content-wrapper {
+      justify-content: space-between;
+      width: 84%;
+      
+    }
+
+    #faq-section div.faq-content {
+      flex-basis: 47%;
+    }
+
+    #faq-section h4 {
+      font-family: "Poppins", sans-serif;
+      font-size: .875em;
+      line-height: 1.125em;
+      font-weight: normal;
     }
 
     #faq-section h2 {
       width: 100%;
+      font-weight: 300;
     }
 
   }
 
-
+/**  END OF TABLET STYLES  **/
 
   @media only screen and (min-width: 1200px) {
-    /**DESKTOP STYLES GO HERE  **/
+    /**DESKTOP STYLES HERE  **/
   
+/** Global styles for site at desktop width **/
+
+ul,
+ol {
+  font-size: 1.125em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.25em;
+}
+
+h4 {
+  font-size: 1.875em;
+  line-height: 1.25em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.333em;
+}
+
+address,
+h5 {
+  line-height: 1.7em;
+}
+
     .content-wrapper {
       width: 80%;
     }
@@ -845,8 +976,8 @@ section.contact-section div.content-wrapper {
     }
 
     footer div.content-wrapper {
-      width: 100%;
-      justify-content: space-between;
+      width: 80%;
+      justify-content: center;
       align-items: flex-start;
     }
 
@@ -857,10 +988,17 @@ section.contact-section div.content-wrapper {
     #hero-area h1 {
       padding: 10%;
       padding-top: 40px;
+      font-size: 3.75em;
+      width: 56%;
     }
 
     aside {
       height: 260px;
+    }
+
+    input[type=button] {
+      font-size: 1.5em;
+      padding: 0;
     }
 
     aside div.content-wrapper {
@@ -885,6 +1023,7 @@ section.contact-section div.content-wrapper {
     
     section.features div.features-items {
       width: 85%;
+      margin: 0 7.5%;
     }
 
     section.features .features-items article{
@@ -892,9 +1031,12 @@ section.contact-section div.content-wrapper {
       padding-bottom: 140px;
     }
 
-    
+    .features-items p.feature-item-description {
+      font-size: 1.125em;
+      line-height: 1.33em;
+    }
     section.features div.content-wrapper h2 {
-      width: 93%;
+      width: 89%;
     }
     
     section.reviews {
@@ -902,7 +1044,7 @@ section.contact-section div.content-wrapper {
     }
 
     .reviews h2 {
-      padding-bottom: 40px;
+      padding-bottom: 80px;
     }
 
     .reviews div.content-wrapper {
@@ -911,12 +1053,21 @@ section.contact-section div.content-wrapper {
     
     .reviews div.review-text h4 {
       margin: 0;
-    
+    }
+
+    .review-text p {
+      font-size: 1.125em;
     }
 /**Desktop styles for ABOUT PAGE begin here**/
 
     section.mission {
       height: 440px;
+    }
+
+    section.mission .mission-content h2 {
+      font-size: 2.25em;
+      line-height: 1.25em;
+      width: 90%;
     }
 
     div.mission-statement p {
@@ -934,8 +1085,7 @@ section.contact-section div.content-wrapper {
     section.contact-section h2 {
       padding: 0;
       font-size: 3em;
-      
-      width: 80%;
+      width: 100%;
     }
 
     section.contact-section div.contact-content {
